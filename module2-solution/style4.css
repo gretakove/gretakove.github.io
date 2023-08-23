@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .heading {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .rectangle {
+    background-color: #999999;
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  p {
+    padding-top: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .section {
+    background-color: #999999;
+    border: 3px solid black;
+    width: 30%;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+  }
+
+  .section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+  }
+
+  .section-title-chicken {
+    width: 125px;
+    height: 25px;
+    background-color: #D59897;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+  }
+
+  .section-title-beef {
+    width: 125px;
+    height: 25px;
+    background-color: #C14543;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+  }
+
+  .section-title-sushi {
+    width: 125px;
+    height: 25px;
+    background-color: #E5D198;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+  }
+
+  /*** Tablet version ***/
+ @media (min-width: 768px) and (max-width: 991px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+   .section:nth-child(1) {
+      width: 45%;
+      align: left;
+    }
+
+    .section:nth-child(2) {
+      width: 45%;
+      float: left;
+    }
+    
+    .section:nth-child(3) {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
+
+  /*@media (max-width: 991px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section {
+      width: 45%;
+    }
+    
+    .section:nth-child(3) {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }*/
+
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section {
+      width: 90%;
+      margin-top: 20px;
+    }
+  }
